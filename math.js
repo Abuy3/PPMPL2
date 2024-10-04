@@ -1,5 +1,5 @@
-function tambah(a, b) { 
-    return a + b;
+function tambah(a, b, c) { 
+    return a + b + c;
   } 
   
   function kali(a, b) { 

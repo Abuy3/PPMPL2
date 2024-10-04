@@ -2,10 +2,10 @@ const { expect } = require('chai');
 const { tambah, kali, kurang, bagi } = require('./math');
 
 describe('Pengujian Fungsi Matematika', function() {
-   //Test cases untuk fungsi tambah
+  //  Test cases untuk fungsi tambah
    describe('Fungsi tambah', function() {
-    it('seharusnya menambahkan dua angka positif dengan benar', function() {
-      expect(tambah(2, 3)).to.equal(5);
+    it('seharusnya menambahkan tiga angka positif dengan benar', function() {
+      expect(tambah(10, 35, 2000)).to.equal(2135);
    });
 
    it('seharusnya menangani angka negatif', function() {
@@ -22,7 +22,7 @@ describe('Pengujian Fungsi Matematika', function() {
   //Test cases untuk fungsi kali
   describe('Fungsi kali', function() {
     it('seharusnya mengalikan dua angka positif dengan benar', function() {
-      expect(kali(2, 3)).to.equal(6);
+      expect(kali(-200, -3)).to.equal(-300);
     });
 
     it('seharusnya menangani angka negatif', function() {
@@ -38,8 +38,8 @@ describe('Pengujian Fungsi Matematika', function() {
 
   // Test cases untuk fungsi kurang
  describe('Fungsi kurang', function() {
-    it('seharusnya mengurangkan dua angka positif dengan benar', function() {
-      expect(kurang(5, 3)).to.equal(2);
+    it('seharusnya mengurangkan dua angka positif dan negatif dengan benar', function() {
+      expect(kurang(-15, 3)).to.equal(2);
     });
 
     it('seharusnya menangani angka negatif', function() {
@@ -55,8 +55,8 @@ describe('Pengujian Fungsi Matematika', function() {
 
   //Test cases untuk fungsi bagi
 describe('Fungsi bagi', function() {
-    it('seharusnya membagi dua angka positif dengan benar', function() {
-      expect(bagi(6, 3)).to.equal(2);
+    it('seharusnya membagi  angka positif dan negatif dengan benar', function() {
+      expect(bagi(-60, 3)).to.equal(2);
     });
 
     it('seharusnya menangani angka negatif', function() {
